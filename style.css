@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath fill='%23ffb3ba' d='M50 15.5c-9.7 0-17.5 7.8-17.5 17.5 0 8.8 7.1 15.9 15.9 15.9s15.9-7.1 15.9-15.9c0-9.7-7.8-17.5-17.5-17.5zm0 31.8c-7.9 0-14.3-6.4-14.3-14.3S42.1 18.7 50 18.7s14.3 6.4 14.3 14.3-6.4 14.3-14.3 14.3z'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before,
+.container::after {
+    content: '♥';
+    font-size: 100px;
+    color: rgba(255, 105, 180, 0.1);
+    position: absolute;
+    z-index: -1;
+}
+
+.container::before {
+    top: -20px;
+    left: -20px;
+    transform: rotate(-30deg);
+}
+
+.container::after {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(30deg);
+}
+
+h1 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 25px;
+    border: 2px solid #ffb3ba;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff69b4;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#proposalOutput {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 228, 225, 0.7);
+    border-radius: 15px;
+    border: 2px solid #ff69b4;
+}
+
+#proposalOutput h2 {
+    color: #ff1493;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#proposalText {
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}

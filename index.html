@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Proposal Generator</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>💖 Love Proposal Generator 💖</h1>
+        <form id="proposalForm">
+            <label for="name">Enter the person's name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="favorite">What are their favorite things? (e.g., coffee, books):</label>
+            <input type="text" id="favorite" required>
+            
+            <label for="style">Choose a proposal style:</label>
+            <select id="style" required>
+                <option value="romantic">Romantic</option>
+                <option value="funny">Funny</option>
+                <option value="poetic">Poetic</option>
+            </select>
+            
+            <button type="submit">Generate Proposal</button>
+        </form>
+        <div id="proposalOutput">
+            <h2>Your Proposal:</h2>
+            <p id="proposalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
